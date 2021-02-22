@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Events\MyEvent;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,9 @@ Route::get('/', function () {
 
 Route::get('/index',function(){
 	return view('index');
+});
+
+Route::get('/enviar', function(){
+	echo "Levantando el evento";
+	event(new MyEvent('Levanto el evento'));
 });

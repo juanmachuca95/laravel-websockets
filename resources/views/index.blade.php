@@ -22,6 +22,22 @@
   <p>
     Try publishing an event to channel <code>my-channel</code>
     with event name <code>my-event</code>.
+
+    <label for="total">
+      Monto: 
+    </label>
+    <span id="total"></spans>
+
+
+    <input type="text" name="monto"><button id="enviar">Enviar</button>
+
+    <script>
+      const enviar = document.getElementById('enviar');
+
+      enviar.addEventListener('click', () => {
+        event
+      });
+    </script>
   </p>
 </body>
 
